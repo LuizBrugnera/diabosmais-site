@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo+Mono:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo+Mono:ital,wght@0,500;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo+Mono:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo+Mono:ital,wght@0,500;1,200&display=swap");
 
 @font-face {
   font-family: DarkFont;
@@ -9,6 +9,7 @@
 
 body {
   color: white;
+  background-color: black;
 }
 
 header {
@@ -28,16 +29,18 @@ nav,
 nav ul {
   list-style-type: none;
   margin-left: auto;
-  font-family: 'Chivo Mono', monospace;
+  font-family: "Chivo Mono", monospace;
 }
 
-.txt-nav{
+.txt-nav {
   color: white;
 
   font-size: 1.5rem;
 }
 
-.txt-nav:hover, .txt-marca:hover, .link-red:hover{
+.txt-nav:hover,
+.txt-marca:hover,
+.link-red:hover {
   color: rgb(191, 17, 17);
   transition: 500ms;
 }
@@ -45,19 +48,19 @@ nav ul {
 .link-red {
   text-decoration: none;
   color: white;
-} 
-.link-red:hover{
+}
+.link-red:hover {
   transition: 1100ms;
 }
-.txt-nav:focus, 
+.txt-nav:focus,
 .txt-nav:active,
-.txt-marca:focus, 
+.txt-marca:focus,
 .txt-marca:active {
   color: rgb(191, 17, 17);
 }
 
 #home {
-  min-height: 800px;
+  min-height: 650px;
 }
 
 .title-image {
@@ -73,7 +76,7 @@ nav ul {
 .txt-marca {
   color: white;
   font-size: 3rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .li-nav {
@@ -84,25 +87,62 @@ nav ul {
   font-size: 3rem;
   padding: 20px;
 
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .txt-p {
   font-size: 2.3rem;
   padding: 20px;
 
-  font-family: 'Chivo Mono', monospace;
+  font-family: "Chivo Mono", monospace;
 }
 
-.main-p{
+.teste {
+  display: inline-block;
+}
+
+.main-p {
   padding-right: 50px;
   text-align: left;
 }
 
-@media (max-width: 850px) {
+.title-membros {
+  padding: 50px 0px;
+}
 
+.container-perfil {
+  display: flex;
+}
+
+.box {
+  width: 45%;
+}
+
+.descricao-perfil {
+  padding-left: 40px;
+}
+
+.title-perfil {
+  font-family: "Chivo Mono", monospace;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.texto-perfil {
+  font-family: "Chivo Mono", monospace;
+  margin: 5px;
+}
+
+.img-perfil {
+  border-radius: 50%;
+
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 850px) {
   .navbar-toggle-icon::before {
-    content: "\f0c9"; 
+    content: "\f0c9";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: white;
@@ -125,7 +165,6 @@ nav ul {
   }
   .txt-marca {
     font-size: 2rem;
-    
   }
 
   .txt-h1 {
@@ -134,13 +173,23 @@ nav ul {
 
   .txt-p {
     font-size: 1.3rem;
-    
+
     text-align: center;
   }
 
   .main-p {
     padding-right: 20px;
     text-align: main;
-}
+  }
+  .container-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .descricao-perfil {
+    padding: 40px 0px;
+    text-align: center;
+  }
 }
