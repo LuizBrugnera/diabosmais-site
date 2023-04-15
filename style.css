@@ -55,7 +55,7 @@ nav ul {
 .txt-nav:focus,
 .txt-nav:active,
 .txt-marca:focus,
-.txt-marca:active {
+.txt-marca:active{
   color: rgb(191, 17, 17);
 }
 
@@ -85,7 +85,7 @@ nav ul {
 
 .txt-h1 {
   font-size: 3rem;
-  padding: 20px;
+  padding: 25px;
 
   font-family: "Bebas Neue", cursive;
 }
@@ -106,8 +106,8 @@ nav ul {
   text-align: left;
 }
 
-.title-membros {
-  padding: 50px 0px;
+.row-membros {
+  padding-top: 50px;
 }
 
 .container-perfil {
@@ -126,11 +126,12 @@ nav ul {
   font-family: "Chivo Mono", monospace;
   font-size: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .texto-perfil {
   font-family: "Chivo Mono", monospace;
-  margin: 5px;
+  margin: 10px;
 }
 
 .img-perfil {
@@ -138,8 +139,21 @@ nav ul {
 
   width: 150px;
   height: 150px;
+
+  border: solid 3px rgb(255, 255, 255);
 }
 
+.link-contact{
+  text-decoration: none;
+  color: rgb(214, 73, 73);
+}
+
+.img-portfolio { 
+  width: 150px;
+  height: 150px;
+
+  border: solid 3px rgb(255, 255, 255);
+}
 @media (max-width: 850px) {
   .navbar-toggle-icon::before {
     content: "\f0c9";
