@@ -154,7 +154,8 @@ nav ul {
 
   border: solid 3px rgb(255, 255, 255);
 }
-@media (max-width: 850px) {
+
+@media (max-width: 1000px) {
   .navbar-toggle-icon::before {
     content: "\f0c9";
     font-family: "Font Awesome 5 Free";
@@ -178,7 +179,7 @@ nav ul {
     margin-left: 0px;
   }
   .txt-marca {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .txt-h1 {
@@ -205,5 +206,10 @@ nav ul {
   .descricao-perfil {
     padding: 40px 0px;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .txt-marca {
+    font-size: 2rem;
   }
 }
